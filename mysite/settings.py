@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@%hbn=!+ivle&5!6jcsexkh@m*_7^(pdl^t9#q-&1cs88$ew3-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.ogradysocial.pythonanywhere.com',]
 
 
 # Application definition
@@ -89,9 +89,9 @@ DATABASES = {
 LANGUAGE_CODE = 'en-uk'
 
 DATE_INPUT_FORMATS = (
-    '%Y-%m-%d',              # '2006-10-25'
-    '%d/%m/%Y',              # '25/10/2006'
+    '%d%m%y',              # '251006'
     '%d/%m/%y',              # '25/10/06'
+    '%Y-%m-%d',              # '2006-10-25'
 )
 
 DATE_FORMAT = "l jS F Y"     # is not having effect
@@ -102,7 +102,7 @@ LOGIN_REDIRECT_URL = '/'
 
 USE_I18N = True
 
-USE_L10N = True
+USE_L10N = False
 
 USE_TZ = True
 
